@@ -1,0 +1,5 @@
+rule salmonIndex:
+    input:
+        transcripts="/fdb/GENCODE/Gencode_human/release_25/gencode.v25.transcripts.fa"
+    output: "gencode25/sa.bin"
+    wrapper: "file://../index"
